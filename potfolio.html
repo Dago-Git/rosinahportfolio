@@ -213,7 +213,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-6" style="color: #fcfdfd;">
                     <h2>Contactez-moi</h2>
                     <p>Remplissez le formulaire ci-dessous pour me contacter :</p>
                     <form action="#" method="post">
@@ -234,35 +234,16 @@
                         <button type="submit" class="btn btn-primary">Envoyer</button>
                     </form>
                 </div>
-                <div class="col-md-8 contact-info">
+                <div class="col-md-6 col-sm-6 contact-info" style="color: #fcfdfd;">
                     <h2>Mes Coordonnées</h2>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:VotreEmail@gmail.com">ramanoarisonaime15@gmail.com</a></p>
-                    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/VotrePageFacebook">Manoa Arison</a></p>
+                    <p><i class="fab fa-facebook"></i> <a href="https://web.facebook.com/Dagoman.301/">Manoa Arison</a></p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/VotreProfilLinkedIn">Ramanoarison Aimé</a></p>
                     <p><i class="fas fa-phone"></i> +261 34 44 3724 24</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".navbar-nav .nav-link").on("click", function() {
-                $(".navbar-nav .nav-link").removeClass("active");
-                $(this).addClass("active");
-            });
-
-             // Ajoute la classe 'text-left-visible' aux éléments textuels après un court délai
-             setTimeout(function() {
-                    $(".text-left-hidden").addClass("text-left-visible");
-                }, 500); // Délai en millisecondes
-
-        });
-    </script>
 
 <footer>
     <div class="container">
@@ -278,6 +259,25 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".navbar-nav .nav-link").on("click", function() {
+            $(".navbar-nav .nav-link").removeClass("active");
+            $(this).addClass("active");
+        });
+
+         // Ajoute la classe 'text-left-visible' aux éléments textuels après un court délai
+         setTimeout(function() {
+                $(".text-left-hidden").addClass("text-left-visible");
+            }, 500); // Délai en millisecondes
+
+    });
+</script>
 
 </body>
 </html>

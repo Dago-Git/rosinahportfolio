@@ -1,4 +1,6 @@
 body {
+    
+          
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -140,6 +142,8 @@ h2, h3 {
 .parcours {
     background-color: #f8f9fa;
     padding: 50px 0;
+    background-color: black;
+    opacity: 0.02; /* Opacité à 2% */
 }
 
 .parcours-item {
@@ -168,6 +172,7 @@ h2, h3 {
 }
 
 .services {
+    margin-top: -550px;
     background-color: #f8f9fa;
     padding: 50px 0;
 }
@@ -189,8 +194,21 @@ h2, h3 {
 }
 
 .price-packages {
+    background: url('imageBureau2.jpg') no-repeat center center fixed;
+    background-size: cover;
     background-color: #f8f9fa;
     padding: 50px 0;
+}
+.price-packages::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.12; /* Opacité à 2% */
+    z-index: -1; /* Mettre la pseudo-classe derrière le contenu principal */
 }
 
 .card {
@@ -275,20 +293,34 @@ footer {
     color: #6c757d;
 }
 
-
 .contact-section {
+    background: url('imageBureau2.jpg') no-repeat center center fixed;
+    background-size: cover;
     padding: 50px 0;
     text-align: center;
+    position: relative; /* Ajouter une position relative pour le conteneur */
+    z-index: 1; /* Ajouter un z-index pour empiler les éléments correctement */
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.12; /* Opacité à 2% */
+    z-index: -1; /* Mettre la pseudo-classe derrière le contenu principal */
 }
 
 .contact-info {
     margin-top: 30px;
-    
+    text-align: left; /* Aligner le texte à gauche */
 }
 
 .contact-info p {
     margin-bottom: 10px;
-    text-align: left;
 }
 
 .contact-info i {
