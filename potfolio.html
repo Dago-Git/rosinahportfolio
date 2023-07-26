@@ -4,15 +4,13 @@
     <title>Aimé Rosinah</title>
     <link rel="icon" href="imageMoi.ico" type="image/x-icon"> <!-- Remplacez "favicon.ico" par le chemin vers votre fichier .ico -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header  style="background-image: url('imageBureau.jpg'); background-size: cover; background-position: center;">
-        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: transparent;position:fixed;  position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;" >
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: transparent;position:fixed;  position: fixed;top: 0;left: 0;width: 100%;z-index: 1000;" >
             <a class="navbar-brand" href="#" style="color: aliceblue;"><img src="imageMoi.ico" alt="Mon icône" style="width: 35px; height: 35px"> Aimé Rosinah</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,6 +19,9 @@
                 <ul class="navbar-nav ml-auto" style=" align-items: center;">
                     <li class="nav-item">
                         <a class="nav-link" href="#accueil" style="color: aliceblue;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="color: aliceblue;">Mon service</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#parcours" style="color: aliceblue;">Parcours</a>
@@ -47,6 +48,7 @@
                     <h2> Developpeur FullStack </h2>
                     <p class="lead">Bienvenue sur mon portfolio.Découvrez mes projets passionnants.</p>
                     <a href="#contact" class="btn-contact btn " >Contacter moi</a>
+                    <a href="#" class="btn-contact btn " >Linkedin</a>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
                     <img src="imageMoi.PNG" alt="Image d'accueil" class="img-fluid rounded-circle">
@@ -59,7 +61,7 @@
         <div class="container">
             <h2 class="text-center mb-4">Mon Parcours</h2>
             <div class="parcours-item">
-                <i class="icon fas fa-graduation-cap"></i>
+                <i class="icon fas fa-graduation-cap" style="color: #0ae5f5;"></i>
                 <div class="content">
                     <div class="title">Diplôme en Informatique</div>
                     <div class="date">Université XYZ - 20XX</div>
@@ -67,7 +69,7 @@
                 </div>
             </div>
             <div class="parcours-item">
-                <i class="icon fas fa-briefcase"></i>
+                <i class="icon fas fa-briefcase" style="color: #0ae5f5;"></i>
                 <div class="content">
                     <div class="title">Développeur Web Junior</div>
                     <div class="date">Entreprise ABC - 20XX à 20XX</div>
@@ -75,6 +77,35 @@
                 </div>
             </div>
             <!-- Ajoutez d'autres éléments de votre parcours ici... -->
+        </div>
+    </section>
+
+    <section id="services"  class="services">
+        <div class="container">
+            <h2 class="text-center mb-4">Mes Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="service-icon fas fa-laptop-code" style="color: #0ae5f5;"></i>
+                        <div class="service-title">Développement Web</div>
+                        <p>Je crée des sites web modernes et réactifs en utilisant les dernières technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="service-icon fas fa-mobile-alt" style="color: #0ae5f5;"></i>
+                        <div class="service-title">Applications Mobiles</div>
+                        <p>Je développe des applications mobiles pour iOS et Android pour répondre à vos besoins.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="service-icon fas fa-code" style="color: #0ae5f5;"></i>
+                        <div class="service-title">Programmation</div>
+                        <p>Je suis passionné de programmation et je peux vous aider avec des projets divers.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -105,6 +136,62 @@
         </div>
     </section>
 
+    <section class="price-packages">
+        <div class="container">
+            <h2 class="text-center mb-4">PRIX ET FORFAITS</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Developpeur Front-End</div>
+                            <div class="price">$30/heure</div>
+                            <ul class="features-list">
+                                <li>Service 1 inclus</li>
+                                <li>Service 2 inclus</li>
+                                <li>Service 3 inclus</li>
+                                <!-- Ajoutez d'autres services inclus ici... -->
+                            </ul>
+                            <a href="#contact" class="btn-contact btn btn-primary">Contacter maintenant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Developpeur Back-End</div>
+                            <div class="price">$30/heure</div>
+                            <ul class="features-list">
+                                <li>Service 1 inclus</li>
+                                <li>Service 2 inclus</li>
+                                <li>Service 3 inclus</li>
+                                <li>Service 4 inclus</li>
+                                <!-- Ajoutez d'autres services inclus ici... -->
+                            </ul>
+                            <a href="#contact" class="btn-contact btn btn-primary">Contacter maintenant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Developpeur FullStack</div>
+                            <div class="price">$35/heure</div>
+                            <ul class="features-list">
+                                <li>Service 1 inclus</li>
+                                <li>Service 2 inclus</li>
+                                <li>Service 3 inclus</li>
+                                <li>Service 4 inclus</li>
+                                <li>Service 5 inclus</li>
+                                <!-- Ajoutez d'autres services inclus ici... -->
+                            </ul>
+                            <a href="#contact" class="btn-contact btn btn-primary">Contacter maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="a-propos" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">À Propos de Moi</h2>
@@ -123,33 +210,45 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contactez-moi</h2>
-            <p>Remplissez le formulaire ci-dessous pour me contacter :</p>
-            <form action="#" method="post">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Contactez-moi</h2>
+                    <p>Remplissez le formulaire ci-dessous pour me contacter :</p>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                <div class="col-md-8 contact-info">
+                    <h2>Mes Coordonnées</h2>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:VotreEmail@gmail.com">ramanoarisonaime15@gmail.com</a></p>
+                    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/VotrePageFacebook">Manoa Arison</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/VotreProfilLinkedIn">Ramanoarison Aimé</a></p>
+                    <p><i class="fas fa-phone"></i> +261 34 44 3724 24</p>
                 </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".navbar-nav .nav-link").on("click", function() {
@@ -164,6 +263,21 @@
 
         });
     </script>
+
+<footer>
+    <div class="container">
+        <div class="follow-me">Suivez-moi</div>
+        <ul class="social-icons">
+            <li><a href="mailto:VotreEmail@gmail.com"><i class="fab fa-google"></i></a></li>
+            <li><a href="https://twitter.com/VotreTwitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/VotrePageFacebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aim%C3%A9-ramanoarison-482027280/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <div class="copyright">
+            © Copyright 2023 Created By : Aimé Rosinah
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

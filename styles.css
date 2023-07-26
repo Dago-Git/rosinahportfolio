@@ -31,7 +31,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #007bff;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 section {
@@ -165,4 +165,132 @@ h2, h3 {
 .parcours-item .date {
     font-size: 18px;
     color: #6c757d;
+}
+
+.services {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price-packages {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.btn-contact {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.follow-me {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #007bff;
+    font-size: 24px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+.contact-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 30px;
+    
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-info i {
+    margin-right: 10px;
 }
