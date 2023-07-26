@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Ajoute un padding en haut pour éviter que le contenu soit masqué par le menu fixe */
+}
+
+header {
+    margin-top: -70px;
+    padding: 100px 0;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Une valeur élevée pour que le menu reste en avant-plan */
+   
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h1 {
+    color: #0ae5f5;
+}
+
+h2, h3 {
+    color: #0ae5f5;
+}
+
+
+.lead{
+    color: #f8f9fa;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+   
+    
+
+}
+
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+    color: blue;
+}
+
+.img-fluid.rounded-circle {
+    transition: transform 0.3s; /* Définit la transition pour la propriété 'transform' */
+    width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
+.img-fluid.rounded-circle:hover {
+    transform: scale(1.2); /* Applique un agrandissement de 20% au survol de l'image */
+}
+
+.lead {
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0ae5f5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-contact:hover {
+    transform: scale(1.1); /* Agrandit le bouton de 10% au survol */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre au survol */
+}
+
+.text-left-hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.text-left-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.lead {
+    margin-bottom: 20px;
+}
+
+.move-left {
+    transform: translateX(100%);
+    transition: transform 2s;
+}
+
+
+
+.display-4 {display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 2px;
+    width: 0;
+    border-right: 2px solid #007bff;
+    animation: typing 4s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #007bff; }
+}
+
+.parcours {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.parcours-item {
+    margin-bottom: 30px;
+}
+
+.parcours-item .icon {
+    font-size: 36px;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.parcours-item .content {
+    padding-left: 60px;
+}
+
+.parcours-item .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.parcours-item .date {
+    font-size: 18px;
+    color: #6c757d;
+}
