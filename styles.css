@@ -15,8 +15,17 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000; /* Une valeur élevée pour que le menu reste en avant-plan */
+    
    
 }
+
+.menu-green {
+    background-color: rgba(8, 8, 8, 0.801) !important; /* Couleur de fond verte */
+    opacity: 0.09;
+  }
+  .menu-green:not(a):not(input[type="text"]):not(input[type="password"]):not(input[type="email"]) {
+    opacity: 1;
+  } 
 
 nav ul {
     list-style: none;
@@ -174,7 +183,7 @@ h2, h3 {
 .services {
     margin-top: -550px;
     background-color: #f8f9fa;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .service-item {

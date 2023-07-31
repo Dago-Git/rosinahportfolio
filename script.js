@@ -18,4 +18,12 @@ $(document).ready(function() {
       $("#myCarousel").carousel({
         interval: 3000 // Temps en millisecondes entre chaque image (3 secondes dans cet exemple)
     });
+
+    $(window).scroll(function() {
+        // Récupérer tous les éléments avec l'id "headMenu"
+        var elements = $('#headMenu');
+    
+        // Ajouter la classe "menu-green" à tous les éléments
+        elements.addClass('menu-green');
+      });
 });
